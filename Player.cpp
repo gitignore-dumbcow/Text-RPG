@@ -1,32 +1,12 @@
 #include "Player.h"
 
-std::string Player::GetWeapon()
+void Player::Update()
 {
-    return _weapon;
-}
+	attackMod = weapon->atkBoost + armor->atkBoost + accessory->atkBoost;
+	defenceMod = weapon->defBoost + armor->defBoost + accessory->defBoost;
+	speedMod = weapon->spdBoost + armor->spdBoost + accessory->spdBoost;
 
-std::string Player::GetArmor()
-{
-    return _armor;
-}
+	hitpoints = 5 + weapon->hpBoost + armor->hpBoost + accessory->hpBoost;
 
-std::string Player::GetAccessory()
-{
-    return _accessory;
-}
-
-void Player::SetWeapon(std::string weapon)
-{
-    _weapon = weapon;
-}
-
-void Player::SetArmor(std::string armor)
-{
-    _armor = armor;
-}
-
-void Player::SetAccessory(std::string accessory)
-{
-    _accessory = accessory;
 }
 

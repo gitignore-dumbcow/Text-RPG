@@ -1,6 +1,7 @@
 #pragma once
 #include "Entity.h"
 #include "Random.h"
+#include "Mathf.h"
 class ActionManager
 {
 private:

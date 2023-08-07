@@ -1,5 +1,6 @@
 #include <string>
 #include "Entity.h"
+#include "Mathf.h"
 
 class Monster : public Entity
 {
@@ -45,7 +46,9 @@ public:
 		speedMod = original.speedMod;
 	}
 
+	Inventory* inventory = new Inventory(3);
 
+	void Update();
 	
 };
 

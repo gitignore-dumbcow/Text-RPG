@@ -7,34 +7,38 @@ void ActionManager::Duel(Entity* attacker, Entity* defender)
 	
 	int hitChance = Random::Range(0, 100);
 
-	float hitRatio = (float)(attackerSpeed / defenderSpeed);
+	int speedDif = attackerSpeed - defenderSpeed;
+	speedDif = Mathf::Clamp(speedDif, 1, 5);
 
 	bool hitConfirmed = false;
 
-	if (hitRatio == 1)
+	if (defenderSpeed == attackerSpeed)
 	{
-		if (hitChance <= 50)
+		if (hitChance - attacker->hitChanceBooster * attacker->hitChanceBooster <= 50)
 		{
 			hitConfirmed = true;
 		}
 	}
-	if (hitRatio > 1)
+	if (defenderSpeed < attackerSpeed)
 	{
-		if (hitChance <= 50 + hitRatio * hitRatio)
+		if (hitChance - attacker->hitChanceBooster * attacker->hitChanceBooster <= 50 + 5 * speedDif)
 		{
 			hitConfirmed = true;
 		}
 	}
-	if (hitRatio < 1)
+	if (defenderSpeed > attackerSpeed)
 	{
-		if (hitChance <= 50 - hitRatio * hitRatio)
+		if (hitChance - attacker->hitChanceBooster * attacker->hitChanceBooster <= 50 - 5 * (5 - speedDif))
 		{
 			hitConfirmed = true;
 		}
 	}
 
+
 	if (hitConfirmed)
 	{
+		attacker->hitChanceBooster = 1;
+
 		int damage = attacker->baseAttack + attacker->attackMod;
 		int defence = defender->baseDefence + defender->defenceMod;
 
@@ -44,6 +48,24 @@ void ActionManager::Duel(Entity* attacker, Entity* defender)
 		{
 			defender->currentHP = defender->currentHP - realDamage;
 		}
+		else
+		{
+			if (realDamage == 0)
+			{
+				if (Random::Range(0, 100) >= 50)
+				{
+					defender->currentHP -= 1;
+				}
+			}
+			if (realDamage < 0)
+			{
+
+			}
+		}
+	}
+	else
+	{
+		attacker->hitChanceBooster *= 1 + speedDif;
 	}
 
 }

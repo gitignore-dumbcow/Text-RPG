@@ -1,14 +1,17 @@
-D:\Github\C++\Text RPG\ActionManager.cpp;D:\Github\C++\Text RPG\x64\Debug\ActionManager.obj
-D:\Github\C++\Text RPG\Entity.cpp;D:\Github\C++\Text RPG\x64\Debug\Entity.obj
-D:\Github\C++\Text RPG\Game.cpp;D:\Github\C++\Text RPG\x64\Debug\Game.obj
-D:\Github\C++\Text RPG\Item.cpp;D:\Github\C++\Text RPG\x64\Debug\Item.obj
-D:\Github\C++\Text RPG\Mathf.cpp;D:\Github\C++\Text RPG\x64\Debug\Mathf.obj
-D:\Github\C++\Text RPG\Monster.cpp;D:\Github\C++\Text RPG\x64\Debug\Monster.obj
-D:\Github\C++\Text RPG\Object.cpp;D:\Github\C++\Text RPG\x64\Debug\Object.obj
-D:\Github\C++\Text RPG\Player.cpp;D:\Github\C++\Text RPG\x64\Debug\Player.obj
-D:\Github\C++\Text RPG\Random.cpp;D:\Github\C++\Text RPG\x64\Debug\Random.obj
-D:\Github\C++\Text RPG\Renderer.cpp;D:\Github\C++\Text RPG\x64\Debug\Renderer.obj
-D:\Github\C++\Text RPG\main.cpp;D:\Github\C++\Text RPG\x64\Debug\main.obj
-D:\Github\C++\Text RPG\ArtworkLibrary.cpp;D:\Github\C++\Text RPG\x64\Debug\ArtworkLibrary.obj
-D:\Github\C++\Text RPG\Sprite.cpp;D:\Github\C++\Text RPG\x64\Debug\Sprite.obj
-D:\Github\C++\Text RPG\StringModifier.cpp;D:\Github\C++\Text RPG\x64\Debug\StringModifier.obj
+D:\Github\Text-RPG\ActionManager.cpp;D:\Github\Text-RPG\x64\Debug\ActionManager.obj
+D:\Github\Text-RPG\Consumable.cpp;D:\Github\Text-RPG\x64\Debug\Consumable.obj
+D:\Github\Text-RPG\Entity.cpp;D:\Github\Text-RPG\x64\Debug\Entity.obj
+D:\Github\Text-RPG\Equipable.cpp;D:\Github\Text-RPG\x64\Debug\Equipable.obj
+D:\Github\Text-RPG\Game.cpp;D:\Github\Text-RPG\x64\Debug\Game.obj
+D:\Github\Text-RPG\Inventory.cpp;D:\Github\Text-RPG\x64\Debug\Inventory.obj
+D:\Github\Text-RPG\Item.cpp;D:\Github\Text-RPG\x64\Debug\Item.obj
+D:\Github\Text-RPG\Mathf.cpp;D:\Github\Text-RPG\x64\Debug\Mathf.obj
+D:\Github\Text-RPG\Monster.cpp;D:\Github\Text-RPG\x64\Debug\Monster.obj
+D:\Github\Text-RPG\Object.cpp;D:\Github\Text-RPG\x64\Debug\Object.obj
+D:\Github\Text-RPG\Player.cpp;D:\Github\Text-RPG\x64\Debug\Player.obj
+D:\Github\Text-RPG\Random.cpp;D:\Github\Text-RPG\x64\Debug\Random.obj
+D:\Github\Text-RPG\Renderer.cpp;D:\Github\Text-RPG\x64\Debug\Renderer.obj
+D:\Github\Text-RPG\main.cpp;D:\Github\Text-RPG\x64\Debug\main.obj
+D:\Github\Text-RPG\ArtworkLibrary.cpp;D:\Github\Text-RPG\x64\Debug\ArtworkLibrary.obj
+D:\Github\Text-RPG\Sprite.cpp;D:\Github\Text-RPG\x64\Debug\Sprite.obj
+D:\Github\Text-RPG\StringModifier.cpp;D:\Github\Text-RPG\x64\Debug\StringModifier.obj
