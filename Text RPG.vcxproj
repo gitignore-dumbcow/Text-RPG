@@ -134,6 +134,7 @@
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Inventory.cpp" />
     <ClCompile Include="Item.cpp" />
+    <ClCompile Include="Log.cpp" />
     <ClCompile Include="Mathf.cpp" />
     <ClCompile Include="Monster.cpp" />
     <ClCompile Include="Object.cpp" />
@@ -153,6 +154,7 @@
     <ClInclude Include="Game.h" />
     <ClInclude Include="Inventory.h" />
     <ClInclude Include="Item.h" />
+    <ClInclude Include="Log.h" />
     <ClInclude Include="Mathf.h" />
     <ClInclude Include="Monster.h" />
     <ClInclude Include="Object.h" />

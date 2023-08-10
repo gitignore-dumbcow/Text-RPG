@@ -3,6 +3,8 @@
 #include "Equipable.h"
 #include "Consumable.h"
 #include "Inventory.h"
+#pragma once
+
 
 class Player : public Entity
 {
@@ -10,8 +12,8 @@ public:
 
 	Player(Equipable* _weapon, Equipable* _armor, Equipable* _accessory)
 	{
-		level = 0;
-		hitpoints = 5;
+		level = 1;
+		baseHP = 10;
 		baseAttack = 1;
 		baseDefence = 1;
 		baseSpeed = 1;
@@ -20,22 +22,17 @@ public:
 		armor = _armor;
 		accessory = _accessory;
 
-		currentHP = hitpoints + weapon->hpBoost + armor->hpBoost + accessory->hpBoost;
+		currentHP = baseHP + weapon->hpBoost + armor->hpBoost + accessory->hpBoost;
 
 		attackMod = 0;
 		defenceMod = 0;
 		speedMod = 0;
 
+		inventory = new Inventory(8);
 	}
 
-	Inventory* inventory = new Inventory(8);
+	Inventory* inventory;
 
-	Equipable* weapon;
-	Equipable* armor;
-	Equipable* accessory;
-
-	bool isHPmaxed = true;
-
-	void Update();
+	void Admin();
 };
 

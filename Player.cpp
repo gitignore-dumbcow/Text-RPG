@@ -1,12 +1,15 @@
 #include "Player.h"
 
-void Player::Update()
+void Player::Admin()
 {
-	attackMod = weapon->atkBoost + armor->atkBoost + accessory->atkBoost;
-	defenceMod = weapon->defBoost + armor->defBoost + accessory->defBoost;
-	speedMod = weapon->spdBoost + armor->spdBoost + accessory->spdBoost;
-
-	hitpoints = 5 + weapon->hpBoost + armor->hpBoost + accessory->hpBoost;
-
+	level = 100;
+	hitpoints = 10;
+	currentHP = 10;
+	baseAttack = 99;
+	baseDefence = 99;
+	baseSpeed = 99;
+	attackMod = 1;
+	defenceMod = 1;
+	speedMod = 1;
 }
 

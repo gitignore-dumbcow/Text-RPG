@@ -3,6 +3,7 @@
 #include "Inventory.h"
 #include <string>
 #include <vector>
+#include "Mathf.h"
 class Entity : public Object
 {
 public:
@@ -11,6 +12,7 @@ public:
 	int level;
 	int hitpoints;
 
+	int baseHP;
 	int baseAttack;
 	int baseDefence;
 	int baseSpeed;
@@ -25,7 +27,10 @@ public:
 
 	//Method
 	void Update();
+	std::string GetName();
 
-	Inventory* inventory = new Inventory(0);
+	Equipable* weapon;
+	Equipable* armor;
+	Equipable* accessory;
 };
 
